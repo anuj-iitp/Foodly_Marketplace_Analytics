@@ -1,4 +1,4 @@
-# Foodly-Marketplace-Analytics
+# Foodly_Marketplace_Analytics
 
 ## 📌 Project Overview
 
@@ -18,7 +18,7 @@ The analysis focuses on the following business questions:
 * How are listings distributed across states and cities?
 * Which restaurants have the highest number of listings?
 * Which price bands contain the largest share of listings?
-* What is the distribution of Veg and Non-Veg listings?
+* What is the distribution of Veg and Non Veg listings?
 * How does listed price compare with restaurant rating?
 * How does listing activity vary across the observation period?
 
@@ -82,9 +82,9 @@ The resulting snapshot is stored in the `current_snapshot_data` table.
 
 Additional fields were used in the current snapshot to support the analysis:
 
-* **Restaurant Location Key** — identifies a restaurant-location combination.
-* **Food Type** — classifies listings as Veg or Non-Veg.
-* **Price Band** — groups listed prices into defined price ranges.
+* **Restaurant Location Key:** identifies a restaurant location combination.
+* **Food Type:** classifies listings as Veg or Non Veg.
+* **Price Band:** groups listed prices into defined price ranges.
 
 The price bands used in the analysis are:
 
@@ -103,7 +103,7 @@ These prepared tables were then used to create the Pivot Tables and dashboard vi
 
 A separate **Relationship** sheet contains a unique State dimension table.
 
-The State table is connected to both the historical data and the current snapshot through the **State** field. This provides a common state-level dimension for the related analysis.
+The State table is connected to both the historical data and the current snapshot through the **State** field. This provides a common state level dimension for the related analysis.
 
 The structure can be summarized as:
 
@@ -218,7 +218,7 @@ The five cities with the highest number of listings are:
 
 ## 5. Listings by Price Band
 
-The dashboard groups listings into six price bands to understand how marketplace listings are distributed across different listed-price ranges.
+The dashboard groups listings into six price bands to understand how marketplace listings are distributed across different listed price ranges.
 
 The analysis uses:
 
@@ -233,7 +233,7 @@ The analysis uses:
 
 ### Insight
 
-The price-band analysis provides a view of the marketplace's listing mix across lower, mid-range, and higher listed-price segments rather than relying only on the overall average price.
+The price band analysis provides a view of the marketplace's listing mix across lower, mid range, and higher listed price segments rather than relying only on the overall average price.
 
 ---
 
@@ -244,12 +244,12 @@ The current snapshot contains:
 | Food Type | Listings |
 |---|---:|
 | Veg | 125,035 |
-| Non-Veg | 50,567 |
+| Non Veg | 50,567 |
 | **Total** | **175,602** |
 
 ### Insight
 
-Veg listings form the larger share of the current marketplace snapshot, accounting for approximately **71%** of listings, while Non-Veg listings account for approximately **29%**.
+Veg listings form the larger share of the current marketplace snapshot, accounting for approximately **71%** of listings, while Non Veg listings account for approximately **29%**.
 
 ---
 
@@ -298,25 +298,10 @@ The major findings from the analysis are:
 2. **Karnataka has the highest listing count** among the states/regions in the dataset.
 3. **Bengaluru has the highest listing count** among the cities, with 16,785 listings.
 4. **McDonald's has the highest number of listings** among the top restaurants analyzed.
-5. **Veg listings make up the majority of the current snapshot**, with 125,035 listings compared with 50,567 Non-Veg listings.
+5. **Veg listings make up the majority of the current snapshot**, with 125,035 listings compared with 50,567 Non Veg listings.
 6. The marketplace has an **average listed price of approximately ₹267.71** and an **average rating of approximately 4.34**.
 7. Historical listing observations remain relatively consistent across the eight observation months included in the dataset.
 8. The **Restaurant Price vs Rating** analysis provides a way to compare pricing and ratings at restaurant level without assuming a causal relationship between the two.
-
----
-
-# 🎯 Business Takeaways
-
-Based on the observed marketplace patterns, the analysis can support areas such as:
-
-* **Market coverage:** Identify states and cities with strong marketplace listing presence.
-* **Restaurant concentration:** Understand which restaurant brands contribute the largest number of listings.
-* **Price segmentation:** Evaluate the distribution of listings across different price bands.
-* **Food mix:** Monitor the balance between Veg and Non-Veg marketplace listings.
-* **Marketplace monitoring:** Use historical observations to track how listing activity changes over time.
-* **Restaurant positioning:** Compare listed prices and ratings to understand different restaurant segments within the marketplace.
-
-These takeaways are based on the patterns present in the provided dataset and should not be treated as conclusions about the entire food marketplace industry.
 
 ---
 
@@ -347,17 +332,18 @@ The dashboard includes slicers for:
 * City
 * Food Type
 
-These filters allow the user to explore the current marketplace analysis across different geographic and food-type segments.
+These filters allow the user to explore the current marketplace analysis across different geographic and food type segments.
 
 ---
 
 # 📁 Project Files
 
 ```text
-Foodly-Marketplace-Analytics/
+Foodly_Marketplace_Analytics/
 │
 ├── Foodly Marketplace Analytics.xlsx
 ├── README.md
+├── Raw_dataset.csv
 └── dashboard.png
 ```
 
@@ -367,7 +353,8 @@ Foodly-Marketplace-Analytics/
 |---|---|
 | `Foodly Marketplace Analytics.xlsx` | Excel workbook containing the marketplace data, current snapshot, Pivot Tables, relationships, and interactive dashboard |
 | `dashboard.png` | PNG preview of the final dashboard |
-| `README.md` | Project documentation, analysis, findings, and business takeaways |
+| `README.md` | Project documentation, analysis and findings |
+| `Raw_dataset.csv` | Original dataset |
 
 ---
 
